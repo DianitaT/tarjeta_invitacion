@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creacion de tarjetas para enviar</title>
+    <link rel="stylesheet" href="css/estilo.css" type="text/css"/>
+    <link rel="shortcut icon" type="image/png" href="img/perritoenolla.jpg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <!-- jQuery library -->
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="#"> ˚ ༘♡ ¡Crea tus propias tarjetas! ·˚ ₊˚ˑ༄ؘ</a>
+        </h1>
+    </header>
+       <!-- el id todo brinda el css para esta caja -->
+    <section class="row conteiner-fluid" id="todo">
+       
+            <aside id="lateral" class="col-sm-3">
+                <select id="temas"> 
+                    <option value="inicio" selected>Seleccione...</option>
+                    <option value="valentin">Dia de San Valentin ♥ </option> 
+                    <option value="navidad">Dia de navidad ✩ </option>
+                    <option value="death">Dia de muertos ☽ </option>
+                </select>
+            </aside>
+    
+        <section id="principal" class="col-sm-9">
+            <!--Grupo de Contenedores que respondan a la funcionalidad-->
+              <article id="datos" class="contenedor">
+                <h3>Inserte Datos</h3>
+                <input type="text" id="palabra" placeholder="introduce una palabra">
+                <input type="text" id="numero" placeholder="introduce una número decimal">
+                <input type="button" value="Mostrar Datos" onclick="mostrarDatos();">
+              </article>
+              
+              <article id="valentin" class="contenedor">
+                <h3>Trabajo con imágenes</h3>
+                <img id="foto" class="foto" src="img/uno.png" class="galeria">
+                <img src="img/imagenamor1.png" class="galeria" onclick="tema('L1');">
+                <img src="img/imagenamor2.png" class="galeria" onclick="tema('L2');">
+                <img src="img/imagenamor3.png" class="galeria" onclick="tema('L3');">
+              </article>
+              <article id="navidad" class="contenedor">
+                <h3>Trabajo con imágenes</h3>
+                <img id="foto" class="foto" src="img/uno.png" class="galeria">
+                <img src="img/imagennavidad1.jpg" class="galeria" onclick="tema('N1');">
+                <img src="img/imagenavidad2.png" class="galeria" onclick="tema('N2');">
+                <img src="img/imagennavidad3.png" class="galeria" onclick="tema('N3');">
+              </article>
+              <article id="death" class="contenedor">
+                <h3>Trabajo con imágenes</h3>
+                <img id="foto" class="foto" src="img/uno.png" class="galeria">
+                <img src="img/imagenmuertos1.jpg" class="galeria" onclick="tema('M1');">
+                <img src="img/imagenesmuertos2.png" class="galeria" onclick="tema('M2');">
+                <img src="img/imagenmuertos3.png" class="galeria" onclick="tema('M3');">
+            </article>
+               <!--Caja para poner el resultado-->
+            <p id="resultado" class="res"> ˚ ༘♡ ⋆｡˚Seleccione la tematica del dia ˚ ༘♡ ⋆｡</p>
+        </section>
+    </section>
+    <footer>
+        <h6>¡Desarrollado para la diversion! </h6>  
+        <h6>Creado por Diana Santillan</h6>  
+     </footer>
+     <script src="Js/formas.js"></script>
+     </body>
+     </html>
